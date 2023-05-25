@@ -12,10 +12,21 @@ class GamesViewController: UIViewController {
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var tableView: UITableView!
     
-    private var gameViewModel =  GamesViewModel()
+    private var viewModel:  GamesViewModel
     private var gamesResult = [GameModelResult]()
     private var currentPage = 1
     var parameter :[String:Any] = [:]
+    
+    
+    init(viewModel:GamesViewModel) {
+        self.viewModel = viewModel
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupSearchBar()
@@ -27,7 +38,7 @@ class GamesViewController: UIViewController {
     private func fetchData(currentPage:Int) {
         
         parameter = ["page_size":10,"page":currentPage]
-        gameViewModel.getAPIData(param: parameter, completion: {[weak self] result, error in
+        viewModel.getAPIData(param: parameter, completion: {[weak self] result, error in
             guard let error = error else {
                 
                 guard let games = result?.results else {return}
@@ -43,6 +54,7 @@ class GamesViewController: UIViewController {
 
 
     private func setupTableView() {
+        self.navigationController?.navigationBar.prefersLargeTitles = true
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(UINib(nibName:"GameTableViewCell", bundle: nil), forCellReuseIdentifier: "GameTableViewCell")
@@ -50,6 +62,7 @@ class GamesViewController: UIViewController {
 
     private func setupSearchBar() {
         searchBar.delegate = self
+        searchBar.placeholder = "Search for the games"
     }
 }
 
@@ -67,6 +80,15 @@ extension GamesViewController:UITableViewDelegate,UITableViewDataSource {
         }
        
     }
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        guard (scrollView.contentSize.height - scrollView.contentOffset.y) < scrollView.frame.size.height  else { return }
+        if !viewModel.isLoading {
+            currentPage += 1
+            fetchData(currentPage: currentPage)
+        }
+           
+        }
     
     
     
@@ -88,7 +110,7 @@ extension GamesViewController:UISearchBarDelegate {
             parameter = ["page_size":10,"page":currentPage,"search":searchText]
         }
       
-        gameViewModel.getAPIData(param: parameter, completion: {[weak self] result, error in
+        viewModel.getAPIData(param: parameter, completion: {[weak self] result, error in
             guard let error = error else {
                 
                 guard let games = result?.results else {return}

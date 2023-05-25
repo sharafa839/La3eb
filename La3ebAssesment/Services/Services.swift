@@ -6,7 +6,7 @@
 //
 
 import Foundation
-struct GamesServices:APIHandler {
+struct Services:APIHandler {
     func makeRequest(from param: [String: Any]) -> URLRequest? {
         let urlString =  APIPath().games
             if var url = URL(string: urlString) {

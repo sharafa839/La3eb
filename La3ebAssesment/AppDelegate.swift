@@ -17,11 +17,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.makeKeyAndVisible()
-        let navigationController = UINavigationController(rootViewController: GamesViewController())
-       
-        window?.rootViewController = UINavigationController(rootViewController: GamesViewController())
+        let navigationController = UINavigationController(rootViewController: MainTabBarViewController())
+        navigationController.navigationBar.isHidden = true
+        window?.rootViewController = navigationController
         navigationController.navigationBar.prefersLargeTitles = true
-        
+        let navigationAttributes = [NSAttributedString.Key.font:UIFont.preferredFont(forTextStyle: .title1)]
+        navigationController.navigationBar.largeTitleTextAttributes = navigationAttributes
         return true
     }
 

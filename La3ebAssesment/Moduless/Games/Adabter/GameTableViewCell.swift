@@ -22,17 +22,27 @@ class GameTableViewCell: UITableViewCell {
 
     func configure(_ with:GameModelResult) {
         gameImageView.loadImageUsingCache(withUrl: with.backgroundImage ?? "")
-        categoryLabel.text = with.slug
+        categoryLabel.text = getGeners(with.genres ?? []).joined(separator: ",")
         titleLabel.text = with.name
         metricsLabel.text = "metrics"
         metricsValueLabel.text = "\(with.reviewsCount ?? 0)"
+        self.backgroundColor =  with.openBefore ? .opendCellColor : .white
     }
     
+    func getGeners(_ with:[Genre]) -> [String]{
+        return with.map { genre in
+            genre.name ?? ""
+        }
+    }
     
     
 }
 
-
+extension UIColor {
+    static var opendCellColor:UIColor {
+        return UIColor(named: "opendCellColor")!
+    }
+}
 let imageCache = NSCache<NSString, UIImage>()
 extension UIImageView {
     func loadImageUsingCache(withUrl urlString : String) {

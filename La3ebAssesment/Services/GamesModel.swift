@@ -76,7 +76,7 @@ struct GameModelResult: Codable {
     var tags: [Genre]?
     var esrbRating: EsrbRating?
     var shortScreenshots: [ShortScreenshot]?
-
+    var openBefore = false
     enum CodingKeys: String, CodingKey {
         case id, slug, name, released, tba
         case backgroundImage = "background_image"
