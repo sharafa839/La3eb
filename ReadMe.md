@@ -15,7 +15,7 @@
     - just download the app and run it (I don't use any pods)
     
 # Usage
-    -  i decided MVVM architecture pattern to make some unCoupled between view and view model however there is some coupled  and depends on time also.
+    -  i decided to use  MVVM architecture pattern to make some unCoupled between view and view model however there is some coupled  and depends on time also.
 
 # Dissuasion 
     - the favorite section need more time to develop to store data local or get it from api 
