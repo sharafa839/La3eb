@@ -1,4 +1,6 @@
-This Document For project 
+# This Document For project 
+## introduction
+
 first of all i belive that this project need to some enhancements 
 * i decided MVVM archtiture pattern to make some unCoupled between view and view model however there is some coupled  and depends on time also.
 * the favorite section need more time to develop to store data local or get it from api 
