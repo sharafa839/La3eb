@@ -48,12 +48,12 @@
 		FFC681552A2025B8005F7742 /* GameDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC681532A2025B8005F7742 /* GameDetailTableViewCell.swift */; };
 		FFC681562A2025B8005F7742 /* GameDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFC681542A2025B8005F7742 /* GameDetailTableViewCell.xib */; };
 		FFC6815A2A20DE44005F7742 /* Favorites.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC681592A20DE44005F7742 /* Favorites.swift */; };
-		FFC681622A20F1C8005F7742 /* La3ebAssesmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC681612A20F1C8005F7742 /* La3ebAssesmentTests.swift */; };
 		FFC681692A211296005F7742 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC681682A211295005F7742 /* Helper.swift */; };
+		FFC6817F2A211B81005F7742 /* La3ebAssesmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC6817E2A211B81005F7742 /* La3ebAssesmentTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		FFC681632A20F1C8005F7742 /* PBXContainerItemProxy */ = {
+		FFC681802A211B81005F7742 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = FF53D4BE2A1C201300FBA502 /* Project object */;
 			proxyType = 1;
@@ -107,9 +107,9 @@
 		FFC681532A2025B8005F7742 /* GameDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDetailTableViewCell.swift; sourceTree = "<group>"; };
 		FFC681542A2025B8005F7742 /* GameDetailTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GameDetailTableViewCell.xib; sourceTree = "<group>"; };
 		FFC681592A20DE44005F7742 /* Favorites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favorites.swift; sourceTree = "<group>"; };
-		FFC6815F2A20F1C7005F7742 /* La3ebAssesmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = La3ebAssesmentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FFC681612A20F1C8005F7742 /* La3ebAssesmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = La3ebAssesmentTests.swift; sourceTree = "<group>"; };
 		FFC681682A211295005F7742 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		FFC6817C2A211B81005F7742 /* La3ebAssesmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = La3ebAssesmentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFC6817E2A211B81005F7742 /* La3ebAssesmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = La3ebAssesmentTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,7 +120,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FFC6815C2A20F1C7005F7742 /* Frameworks */ = {
+		FFC681792A211B81005F7742 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -134,7 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				FF53D4C82A1C201300FBA502 /* La3ebAssesment */,
-				FFC681602A20F1C8005F7742 /* La3ebAssesmentTests */,
+				FFC6817D2A211B81005F7742 /* La3ebAssesmentTests */,
 				FF53D4C72A1C201300FBA502 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -143,7 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				FF53D4C62A1C201300FBA502 /* La3ebAssesment.app */,
-				FFC6815F2A20F1C7005F7742 /* La3ebAssesmentTests.xctest */,
+				FFC6817C2A211B81005F7742 /* La3ebAssesmentTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -327,10 +327,10 @@
 			path = "Resources ";
 			sourceTree = "<group>";
 		};
-		FFC681602A20F1C8005F7742 /* La3ebAssesmentTests */ = {
+		FFC6817D2A211B81005F7742 /* La3ebAssesmentTests */ = {
 			isa = PBXGroup;
 			children = (
-				FFC681612A20F1C8005F7742 /* La3ebAssesmentTests.swift */,
+				FFC6817E2A211B81005F7742 /* La3ebAssesmentTests.swift */,
 			);
 			path = La3ebAssesmentTests;
 			sourceTree = "<group>";
@@ -355,22 +355,22 @@
 			productReference = FF53D4C62A1C201300FBA502 /* La3ebAssesment.app */;
 			productType = "com.apple.product-type.application";
 		};
-		FFC6815E2A20F1C7005F7742 /* La3ebAssesmentTests */ = {
+		FFC6817B2A211B81005F7742 /* La3ebAssesmentTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FFC681652A20F1C8005F7742 /* Build configuration list for PBXNativeTarget "La3ebAssesmentTests" */;
+			buildConfigurationList = FFC681822A211B81005F7742 /* Build configuration list for PBXNativeTarget "La3ebAssesmentTests" */;
 			buildPhases = (
-				FFC6815B2A20F1C7005F7742 /* Sources */,
-				FFC6815C2A20F1C7005F7742 /* Frameworks */,
-				FFC6815D2A20F1C7005F7742 /* Resources */,
+				FFC681782A211B81005F7742 /* Sources */,
+				FFC681792A211B81005F7742 /* Frameworks */,
+				FFC6817A2A211B81005F7742 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				FFC681642A20F1C8005F7742 /* PBXTargetDependency */,
+				FFC681812A211B81005F7742 /* PBXTargetDependency */,
 			);
 			name = La3ebAssesmentTests;
 			productName = La3ebAssesmentTests;
-			productReference = FFC6815F2A20F1C7005F7742 /* La3ebAssesmentTests.xctest */;
+			productReference = FFC6817C2A211B81005F7742 /* La3ebAssesmentTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -386,7 +386,7 @@
 					FF53D4C52A1C201300FBA502 = {
 						CreatedOnToolsVersion = 14.3;
 					};
-					FFC6815E2A20F1C7005F7742 = {
+					FFC6817B2A211B81005F7742 = {
 						CreatedOnToolsVersion = 14.3;
 						TestTargetID = FF53D4C52A1C201300FBA502;
 					};
@@ -406,7 +406,7 @@
 			projectRoot = "";
 			targets = (
 				FF53D4C52A1C201300FBA502 /* La3ebAssesment */,
-				FFC6815E2A20F1C7005F7742 /* La3ebAssesmentTests */,
+				FFC6817B2A211B81005F7742 /* La3ebAssesmentTests */,
 			);
 		};
 /* End PBXProject section */
@@ -437,7 +437,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FFC6815D2A20F1C7005F7742 /* Resources */ = {
+		FFC6817A2A211B81005F7742 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -478,21 +478,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FFC6815B2A20F1C7005F7742 /* Sources */ = {
+		FFC681782A211B81005F7742 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FFC681622A20F1C8005F7742 /* La3ebAssesmentTests.swift in Sources */,
+				FFC6817F2A211B81005F7742 /* La3ebAssesmentTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		FFC681642A20F1C8005F7742 /* PBXTargetDependency */ = {
+		FFC681812A211B81005F7742 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = FF53D4C52A1C201300FBA502 /* La3ebAssesment */;
-			targetProxy = FFC681632A20F1C8005F7742 /* PBXContainerItemProxy */;
+			targetProxy = FFC681802A211B81005F7742 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -688,7 +688,7 @@
 			};
 			name = Release;
 		};
-		FFC681662A20F1C8005F7742 /* Debug */ = {
+		FFC681832A211B81005F7742 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -697,12 +697,9 @@
 				DEVELOPMENT_TEAM = Z5W9MX2B58;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
-				MACOSX_DEPLOYMENT_TARGET = 13.3;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = sharaf.La3ebAssesmentTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -710,7 +707,7 @@
 			};
 			name = Debug;
 		};
-		FFC681672A20F1C8005F7742 /* Release */ = {
+		FFC681842A211B81005F7742 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -719,12 +716,9 @@
 				DEVELOPMENT_TEAM = Z5W9MX2B58;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
-				MACOSX_DEPLOYMENT_TARGET = 13.3;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = sharaf.La3ebAssesmentTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -753,11 +747,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FFC681652A20F1C8005F7742 /* Build configuration list for PBXNativeTarget "La3ebAssesmentTests" */ = {
+		FFC681822A211B81005F7742 /* Build configuration list for PBXNativeTarget "La3ebAssesmentTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FFC681662A20F1C8005F7742 /* Debug */,
-				FFC681672A20F1C8005F7742 /* Release */,
+				FFC681832A211B81005F7742 /* Debug */,
+				FFC681842A211B81005F7742 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

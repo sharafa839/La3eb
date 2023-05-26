@@ -1,19 +1,7 @@
 //
-//  ViewController.swift
-//  La3ebAssesment
+//  La3ebAssesmentTests.swift
+//  La3ebAssesmentTests
 //
-//  Created by Sharaf on 23/05/2023.
+//  Created by Sharaf on 26/05/2023.
 //
-
-import UIKit
-
-class ViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-    }
-
-
-}
 

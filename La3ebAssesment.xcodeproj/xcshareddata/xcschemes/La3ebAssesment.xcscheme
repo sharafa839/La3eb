@@ -34,7 +34,18 @@
             parallelizable = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "FFC6815E2A20F1C7005F7742"
+               BlueprintIdentifier = "FFC6817B2A211B81005F7742"
+               BuildableName = "La3ebAssesmentTests.xctest"
+               BlueprintName = "La3ebAssesmentTests"
+               ReferencedContainer = "container:La3ebAssesment.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO"
+            parallelizable = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "FFC6817B2A211B81005F7742"
                BuildableName = "La3ebAssesmentTests.xctest"
                BlueprintName = "La3ebAssesmentTests"
                ReferencedContainer = "container:La3ebAssesment.xcodeproj">

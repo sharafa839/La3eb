@@ -5,14 +5,11 @@
 //  Created by Sharaf on 24/05/2023.
 //
 
+
 import UIKit
 
 class GamesViewController: UIViewController, DidOpenGameDetail, DidFavorite {
-    
-    
-    
-    
-    
+
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var tableView: UITableView!
     
@@ -48,7 +45,7 @@ class GamesViewController: UIViewController, DidOpenGameDetail, DidFavorite {
             guard let error = error else {
                 
                 guard let games = result?.results else {return}
-                var gameUIModel =  games.map ({$0.toGameUIModel})
+                let gameUIModel =  games.map ({$0.toGameUIModel})
                 self?.gamesResult += gameUIModel
                 DispatchQueue.main.async {
                     self?.tableView.reloadData()
