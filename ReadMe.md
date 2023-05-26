@@ -6,18 +6,18 @@
  ## Introduction
  ## Installation
  ## Usage
- 
+ ## Dissuasion 
 
 # Introduction 
-     first of all i believe that this project need to some enhancements 
+- first of all i believe that this project need to some enhancements 
 
 
 # Installation
 
-    * just download the app and run it (I don't use any pods)
+- just download the app and run it (I don't use any pods)
     
 # Usage
-    -  i decided to use  MVVM architecture pattern to make some unCoupled between view and view model however there is some coupled  and depends on time also.
+- i decided to use  MVVM architecture pattern to make some unCoupled between view and view model however there is some coupled  and depends on time also.
 
 # Dissuasion 
 - the favorite section need more time to develop to store data local or get it from api 
