@@ -18,6 +18,7 @@ struct APILoader<T: APIHandler> {
     
     func loadAPIRequest(requestData: T.RequestDataType, completionHandler: @escaping (T.ResponseDataType?, ServiceError?) -> ()) {
         if let urlRequest = apiHandler.makeRequest(from: requestData) {
+            print(urlRequest.url)
             urlSession.dataTask(with: urlRequest) { (data, response, error) in
                 
                 if let httpResponse = response as? HTTPURLResponse {

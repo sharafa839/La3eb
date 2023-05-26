@@ -20,12 +20,12 @@ class GameTableViewCell: UITableViewCell {
         // Initialization code
     }
 
-    func configure(_ with:GameModelResult) {
-        gameImageView.loadImageUsingCache(withUrl: with.backgroundImage ?? "")
-        categoryLabel.text = getGeners(with.genres ?? []).joined(separator: ",")
+    func configure(_ with:GameDetailUIModel) {
+        gameImageView.loadImageUsingCache(withUrl: with.backgroundImage )
+      //  categoryLabel.text = getGeners(with.genres ?? []).joined(separator: ",")
         titleLabel.text = with.name
         metricsLabel.text = "metrics"
-        metricsValueLabel.text = "\(with.reviewsCount ?? 0)"
+        metricsValueLabel.text = "\(with.reviewsCount )"
         self.backgroundColor =  with.openBefore ? .opendCellColor : .white
     }
     

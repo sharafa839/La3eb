@@ -54,51 +54,93 @@ struct YearYear: Codable {
 
 // MARK: - Result
 struct GameModelResult: Codable {
+    var toGameUIModel:GameDetailUIModel {
+        GameDetailUIModel(self)
+    }
+    
+    var openBefore:Bool? = false
+    var favourite:Bool?
     var id: Int?
-    var slug, name, released: String?
+    var slug, name, nameOriginal, description: String?
+    var metacritic: Int?
+    var metacriticPlatforms: [MetacriticPlatform]?
+    var released: String?
     var tba: Bool?
-    var backgroundImage: String?
+    var updated: String?
+    var backgroundImage, backgroundImageAdditional: String?
+    var website: String?
     var rating: Double?
     var ratingTop: Int?
     var ratings: [Rating]?
-    var ratingsCount, reviewsTextCount, added: Int?
+    var reactions: [String: Int]?
+    var added: Int?
     var addedByStatus: AddedByStatus?
-    var metacritic, playtime, suggestionsCount: Int?
-    var updated: String?
+    var playtime, screenshotsCount, moviesCount, creatorsCount: Int?
+    var achievementsCount, parentAchievementsCount: Int?
+    var redditURL: String?
+    var redditName, redditDescription, redditLogo: String?
+    var redditCount, twitchCount, youtubeCount, reviewsTextCount: Int?
+    var ratingsCount, suggestionsCount: Int?
+    var alternativeNames: [String]?
+    var metacriticURL: String?
+    var parentsCount, additionsCount, gameSeriesCount: Int?
     var userGame: String?
     var reviewsCount: Int?
-    var saturatedColor, dominantColor: Color?
-    var platforms: [PlatformElement]?
+    var saturatedColor, dominantColor: String?
     var parentPlatforms: [ParentPlatform]?
-    var genres: [Genre]?
+    var platforms: [PlatformElement]?
     var stores: [Store]?
-    var clip: String?
-    var tags: [Genre]?
+    var developers, tags, publishers: [Developer]?
+    var gener:[Genre]?
     var esrbRating: EsrbRating?
-    var shortScreenshots: [ShortScreenshot]?
-    var openBefore = false
+    var clip: String?
+    var descriptionRaw: String?
+
     enum CodingKeys: String, CodingKey {
-        case id, slug, name, released, tba
+        case id, slug, name
+        case nameOriginal = "name_original"
+        case description, metacritic
+        case metacriticPlatforms = "metacritic_platforms"
+        case released, tba, updated
         case backgroundImage = "background_image"
-        case rating
+        case backgroundImageAdditional = "background_image_additional"
+        case website, rating
         case ratingTop = "rating_top"
-        case ratings
-        case ratingsCount = "ratings_count"
-        case reviewsTextCount = "reviews_text_count"
-        case added
+        case ratings, reactions, added
         case addedByStatus = "added_by_status"
-        case metacritic, playtime
+        case playtime
+        case screenshotsCount = "screenshots_count"
+        case moviesCount = "movies_count"
+        case creatorsCount = "creators_count"
+        case achievementsCount = "achievements_count"
+        case parentAchievementsCount = "parent_achievements_count"
+        case redditURL = "reddit_url"
+        case redditName = "reddit_name"
+        case redditDescription = "reddit_description"
+        case redditLogo = "reddit_logo"
+        case redditCount = "reddit_count"
+        case twitchCount = "twitch_count"
+        case youtubeCount = "youtube_count"
+        case reviewsTextCount = "reviews_text_count"
+        case ratingsCount = "ratings_count"
         case suggestionsCount = "suggestions_count"
-        case updated
+        case alternativeNames = "alternative_names"
+        case metacriticURL = "metacritic_url"
+        case parentsCount = "parents_count"
+        case additionsCount = "additions_count"
+        case gameSeriesCount = "game_series_count"
         case userGame = "user_game"
         case reviewsCount = "reviews_count"
         case saturatedColor = "saturated_color"
         case dominantColor = "dominant_color"
-        case platforms
         case parentPlatforms = "parent_platforms"
-        case genres, stores, clip, tags
+        case platforms, stores, developers, tags, publishers
+        case gener = "gener"
         case esrbRating = "esrb_rating"
-        case shortScreenshots = "short_screenshots"
+        case clip
+        case descriptionRaw = "description_raw"
+   
+        
     }
 }
 

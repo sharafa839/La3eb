@@ -9,17 +9,21 @@ import Foundation
 
 struct GamesDetailsViewModel {
   
-    var id:String
-    init(gameId: String) {
+    var id:Int
+    var isFavorite:Bool
+    var gameDetail:((GameDetailModel?,Error?)->Void)?
+    
+    init(gameId: Int,isFavorite:Bool) {
         self.id = gameId
+        self.isFavorite = isFavorite
        
     }
     
-    func getAPIData(param: [String: Any], completion: @escaping (GameModel?, ServiceError?) -> ()) {
-        let request = Services()
+    func getAPIData( completion: @escaping (GameDetailModel?, ServiceError?) -> ()) {
+        let request = GameDetailService(id: id)
         
         let apiLoader = APILoader(apiHandler: request)
-        apiLoader.loadAPIRequest(requestData: param) { (model, error) in
+        apiLoader.loadAPIRequest(requestData: [:]) { (model, error) in
             if let _ = error {
                 completion(nil, error)
             } else {
@@ -29,3 +33,7 @@ struct GamesDetailsViewModel {
     }
 }
 
+
+struct Sites {
+    var name,link:String
+}

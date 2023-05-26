@@ -31,7 +31,7 @@
 		FFC681262A1EA40F005F7742 /* GamesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC681252A1EA40F005F7742 /* GamesModel.swift */; };
 		FFC681282A1EA517005F7742 /* ApiEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC681272A1EA517005F7742 /* ApiEnvironment.swift */; };
 		FFC6812B2A1EA658005F7742 /* Observables.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC6812A2A1EA658005F7742 /* Observables.swift */; };
-		FFC6812E2A1EA69D005F7742 /* Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC6812D2A1EA69D005F7742 /* Services.swift */; };
+		FFC6812E2A1EA69D005F7742 /* GameService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC6812D2A1EA69D005F7742 /* GameService.swift */; };
 		FFC681312A1EA72A005F7742 /* ApiPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC681302A1EA72A005F7742 /* ApiPath.swift */; };
 		FFC681352A1EA88D005F7742 /* GamesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC681332A1EA88D005F7742 /* GamesViewController.swift */; };
 		FFC681362A1EA88D005F7742 /* GamesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFC681342A1EA88D005F7742 /* GamesViewController.xib */; };
@@ -44,7 +44,23 @@
 		FFC6814B2A1FD9C4005F7742 /* MainTabBarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFC681492A1FD9C4005F7742 /* MainTabBarViewController.xib */; };
 		FFC6814F2A1FDA5F005F7742 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC6814D2A1FDA5F005F7742 /* FavoritesViewController.swift */; };
 		FFC681502A1FDA5F005F7742 /* FavoritesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFC6814E2A1FDA5F005F7742 /* FavoritesViewController.xib */; };
+		FFC681522A2018A5005F7742 /* GameDetailService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC681512A2018A5005F7742 /* GameDetailService.swift */; };
+		FFC681552A2025B8005F7742 /* GameDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC681532A2025B8005F7742 /* GameDetailTableViewCell.swift */; };
+		FFC681562A2025B8005F7742 /* GameDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFC681542A2025B8005F7742 /* GameDetailTableViewCell.xib */; };
+		FFC6815A2A20DE44005F7742 /* Favorites.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC681592A20DE44005F7742 /* Favorites.swift */; };
+		FFC681622A20F1C8005F7742 /* La3ebAssesmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC681612A20F1C8005F7742 /* La3ebAssesmentTests.swift */; };
+		FFC681692A211296005F7742 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC681682A211295005F7742 /* Helper.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FFC681632A20F1C8005F7742 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF53D4BE2A1C201300FBA502 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF53D4C52A1C201300FBA502;
+			remoteInfo = La3ebAssesment;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		FF53D4C62A1C201300FBA502 /* La3ebAssesment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = La3ebAssesment.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -74,7 +90,7 @@
 		FFC681252A1EA40F005F7742 /* GamesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesModel.swift; sourceTree = "<group>"; };
 		FFC681272A1EA517005F7742 /* ApiEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiEnvironment.swift; sourceTree = "<group>"; };
 		FFC6812A2A1EA658005F7742 /* Observables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observables.swift; sourceTree = "<group>"; };
-		FFC6812D2A1EA69D005F7742 /* Services.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services.swift; sourceTree = "<group>"; };
+		FFC6812D2A1EA69D005F7742 /* GameService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameService.swift; sourceTree = "<group>"; };
 		FFC681302A1EA72A005F7742 /* ApiPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiPath.swift; sourceTree = "<group>"; };
 		FFC681332A1EA88D005F7742 /* GamesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesViewController.swift; sourceTree = "<group>"; };
 		FFC681342A1EA88D005F7742 /* GamesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GamesViewController.xib; sourceTree = "<group>"; };
@@ -87,10 +103,24 @@
 		FFC681492A1FD9C4005F7742 /* MainTabBarViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainTabBarViewController.xib; sourceTree = "<group>"; };
 		FFC6814D2A1FDA5F005F7742 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
 		FFC6814E2A1FDA5F005F7742 /* FavoritesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoritesViewController.xib; sourceTree = "<group>"; };
+		FFC681512A2018A5005F7742 /* GameDetailService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDetailService.swift; sourceTree = "<group>"; };
+		FFC681532A2025B8005F7742 /* GameDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDetailTableViewCell.swift; sourceTree = "<group>"; };
+		FFC681542A2025B8005F7742 /* GameDetailTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GameDetailTableViewCell.xib; sourceTree = "<group>"; };
+		FFC681592A20DE44005F7742 /* Favorites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favorites.swift; sourceTree = "<group>"; };
+		FFC6815F2A20F1C7005F7742 /* La3ebAssesmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = La3ebAssesmentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFC681612A20F1C8005F7742 /* La3ebAssesmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = La3ebAssesmentTests.swift; sourceTree = "<group>"; };
+		FFC681682A211295005F7742 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		FF53D4C32A1C201300FBA502 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFC6815C2A20F1C7005F7742 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -104,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				FF53D4C82A1C201300FBA502 /* La3ebAssesment */,
+				FFC681602A20F1C8005F7742 /* La3ebAssesmentTests */,
 				FF53D4C72A1C201300FBA502 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -112,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				FF53D4C62A1C201300FBA502 /* La3ebAssesment.app */,
+				FFC6815F2A20F1C7005F7742 /* La3ebAssesmentTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -119,6 +151,7 @@
 		FF53D4C82A1C201300FBA502 /* La3ebAssesment */ = {
 			isa = PBXGroup;
 			children = (
+				FFC681582A20DE30005F7742 /* Resources  */,
 				FFC6812C2A1EA67F005F7742 /* Services */,
 				FFC681292A1EA64F005F7742 /* Resources */,
 				FF53D4F52A1C2A6300FBA502 /* NetworkLayer */,
@@ -180,6 +213,7 @@
 			isa = PBXGroup;
 			children = (
 				FFC6812A2A1EA658005F7742 /* Observables.swift */,
+				FFC681682A211295005F7742 /* Helper.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -187,7 +221,8 @@
 		FFC6812C2A1EA67F005F7742 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				FFC6812D2A1EA69D005F7742 /* Services.swift */,
+				FFC6812D2A1EA69D005F7742 /* GameService.swift */,
+				FFC681512A2018A5005F7742 /* GameDetailService.swift */,
 				FFC681252A1EA40F005F7742 /* GamesModel.swift */,
 				FFC681452A1FD895005F7742 /* GameDetailModel.swift */,
 			);
@@ -235,6 +270,7 @@
 			children = (
 				FFC681402A1FBD7E005F7742 /* View */,
 				FFC6813F2A1FBCEC005F7742 /* ViewModel */,
+				FFC681572A2025BB005F7742 /* adabter */,
 			);
 			path = GameDetalies;
 			sourceTree = "<group>";
@@ -274,6 +310,31 @@
 			path = Favorites;
 			sourceTree = "<group>";
 		};
+		FFC681572A2025BB005F7742 /* adabter */ = {
+			isa = PBXGroup;
+			children = (
+				FFC681532A2025B8005F7742 /* GameDetailTableViewCell.swift */,
+				FFC681542A2025B8005F7742 /* GameDetailTableViewCell.xib */,
+			);
+			path = adabter;
+			sourceTree = "<group>";
+		};
+		FFC681582A20DE30005F7742 /* Resources  */ = {
+			isa = PBXGroup;
+			children = (
+				FFC681592A20DE44005F7742 /* Favorites.swift */,
+			);
+			path = "Resources ";
+			sourceTree = "<group>";
+		};
+		FFC681602A20F1C8005F7742 /* La3ebAssesmentTests */ = {
+			isa = PBXGroup;
+			children = (
+				FFC681612A20F1C8005F7742 /* La3ebAssesmentTests.swift */,
+			);
+			path = La3ebAssesmentTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -294,6 +355,24 @@
 			productReference = FF53D4C62A1C201300FBA502 /* La3ebAssesment.app */;
 			productType = "com.apple.product-type.application";
 		};
+		FFC6815E2A20F1C7005F7742 /* La3ebAssesmentTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFC681652A20F1C8005F7742 /* Build configuration list for PBXNativeTarget "La3ebAssesmentTests" */;
+			buildPhases = (
+				FFC6815B2A20F1C7005F7742 /* Sources */,
+				FFC6815C2A20F1C7005F7742 /* Frameworks */,
+				FFC6815D2A20F1C7005F7742 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FFC681642A20F1C8005F7742 /* PBXTargetDependency */,
+			);
+			name = La3ebAssesmentTests;
+			productName = La3ebAssesmentTests;
+			productReference = FFC6815F2A20F1C7005F7742 /* La3ebAssesmentTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -306,6 +385,10 @@
 				TargetAttributes = {
 					FF53D4C52A1C201300FBA502 = {
 						CreatedOnToolsVersion = 14.3;
+					};
+					FFC6815E2A20F1C7005F7742 = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = FF53D4C52A1C201300FBA502;
 					};
 				};
 			};
@@ -323,6 +406,7 @@
 			projectRoot = "";
 			targets = (
 				FF53D4C52A1C201300FBA502 /* La3ebAssesment */,
+				FFC6815E2A20F1C7005F7742 /* La3ebAssesmentTests */,
 			);
 		};
 /* End PBXProject section */
@@ -336,6 +420,7 @@
 				FF53D4EC2A1C283B00FBA502 /* SFPRODISPLAYSEMIBOLDITALIC.OTF in Resources */,
 				FFC681502A1FDA5F005F7742 /* FavoritesViewController.xib in Resources */,
 				FF53D4F42A1C283B00FBA502 /* SFPRODISPLAYULTRALIGHTITALIC.OTF in Resources */,
+				FFC681562A2025B8005F7742 /* GameDetailTableViewCell.xib in Resources */,
 				FF53D4D32A1C201700FBA502 /* Assets.xcassets in Resources */,
 				FF53D4ED2A1C283B00FBA502 /* SFPRODISPLAYHEAVYITALIC.OTF in Resources */,
 				FF53D4F12A1C283B00FBA502 /* SFPRODISPLAYTHINITALIC.OTF in Resources */,
@@ -352,6 +437,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FFC6815D2A20F1C7005F7742 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -363,26 +455,46 @@
 				FFC681352A1EA88D005F7742 /* GamesViewController.swift in Sources */,
 				FFC681282A1EA517005F7742 /* ApiEnvironment.swift in Sources */,
 				FF53D4CE2A1C201300FBA502 /* ViewController.swift in Sources */,
+				FFC681522A2018A5005F7742 /* GameDetailService.swift in Sources */,
 				FFC6812B2A1EA658005F7742 /* Observables.swift in Sources */,
 				FF53D4FB2A1C2ACA00FBA502 /* ApiLoader.swift in Sources */,
 				FF53D4CA2A1C201300FBA502 /* AppDelegate.swift in Sources */,
 				FF53D4FF2A1C2B1300FBA502 /* ResponseHandlerEX.swift in Sources */,
+				FFC6815A2A20DE44005F7742 /* Favorites.swift in Sources */,
 				FFC6813E2A1FBB66005F7742 /* GameDetailesViewModel.swift in Sources */,
 				FF53D4F72A1C2A7C00FBA502 /* ApiHandler.swift in Sources */,
 				FFC6813A2A1EB14A005F7742 /* GamesViewModel.swift in Sources */,
 				FFC6814A2A1FD9C4005F7742 /* MainTabBarViewController.swift in Sources */,
-				FFC6812E2A1EA69D005F7742 /* Services.swift in Sources */,
+				FFC6812E2A1EA69D005F7742 /* GameService.swift in Sources */,
 				FF53D5012A1C2B5B00FBA502 /* Constants.swift in Sources */,
 				FF53D4FD2A1C2AFA00FBA502 /* RequestHandlerEX.swift in Sources */,
+				FFC681552A2025B8005F7742 /* GameDetailTableViewCell.swift in Sources */,
 				FFC681462A1FD895005F7742 /* GameDetailModel.swift in Sources */,
 				FF53D4E02A1C248900FBA502 /* GameTableViewCell.swift in Sources */,
 				FFC681262A1EA40F005F7742 /* GamesModel.swift in Sources */,
 				FFC6814F2A1FDA5F005F7742 /* FavoritesViewController.swift in Sources */,
 				FFC681312A1EA72A005F7742 /* ApiPath.swift in Sources */,
+				FFC681692A211296005F7742 /* Helper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFC6815B2A20F1C7005F7742 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFC681622A20F1C8005F7742 /* La3ebAssesmentTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FFC681642A20F1C8005F7742 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF53D4C52A1C201300FBA502 /* La3ebAssesment */;
+			targetProxy = FFC681632A20F1C8005F7742 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		FF53D4CF2A1C201300FBA502 /* Main.storyboard */ = {
@@ -576,6 +688,50 @@
 			};
 			name = Release;
 		};
+		FFC681662A20F1C8005F7742 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z5W9MX2B58;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sharaf.La3ebAssesmentTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/La3ebAssesment.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/La3ebAssesment";
+			};
+			name = Debug;
+		};
+		FFC681672A20F1C8005F7742 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z5W9MX2B58;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sharaf.La3ebAssesmentTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/La3ebAssesment.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/La3ebAssesment";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -593,6 +749,15 @@
 			buildConfigurations = (
 				FF53D4DB2A1C201700FBA502 /* Debug */,
 				FF53D4DC2A1C201700FBA502 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FFC681652A20F1C8005F7742 /* Build configuration list for PBXNativeTarget "La3ebAssesmentTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFC681662A20F1C8005F7742 /* Debug */,
+				FFC681672A20F1C8005F7742 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

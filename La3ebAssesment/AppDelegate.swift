@@ -21,7 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         navigationController.navigationBar.isHidden = true
         window?.rootViewController = navigationController
         navigationController.navigationBar.prefersLargeTitles = true
-        let navigationAttributes = [NSAttributedString.Key.font:UIFont.preferredFont(forTextStyle: .title1)]
+        let navigationAttributes = [NSAttributedString.Key.font:UIFont.preferredFont(forTextStyle: .title1),NSAttributedString.Key.foregroundColor : UIColor.blue]
         navigationController.navigationBar.largeTitleTextAttributes = navigationAttributes
         return true
     }

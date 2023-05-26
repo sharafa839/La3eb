@@ -8,7 +8,46 @@
 import Foundation
 
 // MARK: - GameDetail
-struct GameDetail: Codable {
+struct GameDetailUIModel:Codable {
+    var favourite,openBefore:Bool
+    var id,reviewsCount:Int
+    var description,name,redditURL,backgroundImage,website:String
+    var genre:[Genre]
+    
+    init(_ model:GameDetailModel) {
+        self.favourite = model.favourite ?? false
+        self.openBefore = false
+        self.id = model.id ?? 0
+        self.description = model.description?.html2String ?? ""
+        self.name = model.name ?? ""
+        self.redditURL = model.redditURL ?? ""
+        self.backgroundImage = model.backgroundImage ?? ""
+        self.website = model.website ?? ""
+        self.reviewsCount = model.reviewsCount ?? 0
+        self.genre = []
+    }
+    
+    init(_ model:GameModelResult) {
+        self.favourite = model.favourite ?? false
+        self.openBefore = model.openBefore ?? false
+        self.id = model.id ?? 0
+        self.description = model.description?.html2String ?? ""
+        self.name = model.name ?? ""
+        self.redditURL = model.redditURL ?? ""
+        self.backgroundImage = model.backgroundImage ?? ""
+        self.website = model.website ?? ""
+        self.reviewsCount = model.reviewsCount ?? 0
+        self.genre = model.gener ?? []
+    }
+}
+
+struct GameDetailModel: Codable {
+    
+    var toGameDetailUIModel:GameDetailUIModel {
+        GameDetailUIModel(self)
+    }
+    
+    var favourite:Bool? = false
     var id: Int?
     var slug, name, nameOriginal, description: String?
     var metacritic: Int?

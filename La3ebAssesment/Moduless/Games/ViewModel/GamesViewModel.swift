@@ -10,7 +10,7 @@ class GamesViewModel {
     var isLoading = false
      func getAPIData(param: [String: Any], completion: @escaping (GameModel?, ServiceError?) -> ()) {
         isLoading = true
-        let request = Services()
+        let request = GameService()
         
         let apiLoader = APILoader(apiHandler: request)
         apiLoader.loadAPIRequest(requestData: param) {[weak self] (model, error) in

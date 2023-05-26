@@ -7,64 +7,17 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "03D74544-195B-487F-96AB-8EEAA5C92495"
+            uuid = "2C840A8E-4E91-4534-8DAC-4B0731A6CE86"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "La3ebAssesment/Moduless/Games/View/GamesViewController.swift"
+            filePath = "La3ebAssesment/Services/GamesModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "41"
-            endingLineNumber = "41"
-            landmarkName = "fetchData(currentPage:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "03D74544-195B-487F-96AB-8EEAA5C92495 - 2c3cd06e2476b0c3"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "La3ebAssesment.GamesViewController.fetchData(currentPage: Swift.Int) -&gt; ()"
-                  moduleName = "La3ebAssesment"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/shgardi/Desktop/Home/La3ebAssesment/La3ebAssesment/Moduless/Games/View/GamesViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "41"
-                  endingLineNumber = "41"
-                  offsetFromSymbolStart = "281">
-               </Location>
-               <Location
-                  uuid = "03D74544-195B-487F-96AB-8EEAA5C92495 - c8169db2be7f3474"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Optional&lt;La3ebAssesment.GameModel&gt;, Swift.Optional&lt;La3ebAssesment.ServiceError&gt;) -&gt; () in La3ebAssesment.GamesViewController.fetchData(currentPage: Swift.Int) -&gt; ()"
-                  moduleName = "La3ebAssesment"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/shgardi/Desktop/Home/La3ebAssesment/La3ebAssesment/Moduless/Games/View/GamesViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "41"
-                  endingLineNumber = "41"
-                  offsetFromSymbolStart = "319">
-               </Location>
-               <Location
-                  uuid = "03D74544-195B-487F-96AB-8EEAA5C92495 - fe1a38ae922aa1da"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 (Swift.Optional&lt;La3ebAssesment.GameModel&gt;, Swift.Optional&lt;La3ebAssesment.ServiceError&gt;) -&gt; () in La3ebAssesment.GamesViewController.fetchData(currentPage: Swift.Int) -&gt; ()"
-                  moduleName = "La3ebAssesment"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/shgardi/Desktop/Home/La3ebAssesment/La3ebAssesment/Moduless/Games/View/GamesViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "41"
-                  endingLineNumber = "41"
-                  offsetFromSymbolStart = "37">
-               </Location>
-            </Locations>
+            startingLineNumber = "58"
+            endingLineNumber = "58"
+            landmarkName = "toGameUIModel"
+            landmarkType = "24">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

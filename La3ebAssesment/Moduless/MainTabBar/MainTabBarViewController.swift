@@ -51,12 +51,12 @@ class MainTabBarViewController: UITabBarController {
         
         let titles: [String] = ["Games","Favorites"]
         
-        let unselectedImageNames = ["gamecontroller",
-                                    "question-mark"
+        let unselectedImageNames = ["Vector",
+                                    "Icon"
                                     ]
         
-        let selectedImageNames = ["gamecontroller.fill",
-                                  "selected-myorders"]
+        let selectedImageNames = ["Vector",
+                                  "Icon"]
         
         navigationControllers.enumerated().forEach({ index, navigationController in
             let item = UITabBarItem(title: titles[index],
