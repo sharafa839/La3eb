@@ -50,6 +50,7 @@
 		FFC6815A2A20DE44005F7742 /* Favorites.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC681592A20DE44005F7742 /* Favorites.swift */; };
 		FFC681692A211296005F7742 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC681682A211295005F7742 /* Helper.swift */; };
 		FFC6817F2A211B81005F7742 /* La3ebAssesmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC6817E2A211B81005F7742 /* La3ebAssesmentTests.swift */; };
+		FFC681862A21311B005F7742 /* ReadMe in Resources */ = {isa = PBXBuildFile; fileRef = FFC681852A21311B005F7742 /* ReadMe */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -110,6 +111,7 @@
 		FFC681682A211295005F7742 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		FFC6817C2A211B81005F7742 /* La3ebAssesmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = La3ebAssesmentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFC6817E2A211B81005F7742 /* La3ebAssesmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = La3ebAssesmentTests.swift; sourceTree = "<group>"; };
+		FFC681852A21311B005F7742 /* ReadMe */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ReadMe; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +153,7 @@
 		FF53D4C82A1C201300FBA502 /* La3ebAssesment */ = {
 			isa = PBXGroup;
 			children = (
+				FFC681852A21311B005F7742 /* ReadMe */,
 				FFC681582A20DE30005F7742 /* Resources  */,
 				FFC6812C2A1EA67F005F7742 /* Services */,
 				FFC681292A1EA64F005F7742 /* Resources */,
@@ -418,6 +421,7 @@
 			files = (
 				FF53D4D62A1C201700FBA502 /* LaunchScreen.storyboard in Resources */,
 				FF53D4EC2A1C283B00FBA502 /* SFPRODISPLAYSEMIBOLDITALIC.OTF in Resources */,
+				FFC681862A21311B005F7742 /* ReadMe in Resources */,
 				FFC681502A1FDA5F005F7742 /* FavoritesViewController.xib in Resources */,
 				FF53D4F42A1C283B00FBA502 /* SFPRODISPLAYULTRALIGHTITALIC.OTF in Resources */,
 				FFC681562A2025B8005F7742 /* GameDetailTableViewCell.xib in Resources */,
